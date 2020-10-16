@@ -1,0 +1,29 @@
+<div style="display: flex; margin-top: 50px;margin-left: 50px;">
+    <div class="example-box" cdkDrag>
+        I can be dragged anywhere
+      </div>
+    
+      <div class="example-box" cdkDragLockAxis="y" cdkDrag style="margin-left: 50px;">
+        I can only be dragged up/down
+      </div>
+</div>
+<div style="display: flex; margin-top: 50px;margin-left: 50px;">
+    <div class="example-box1" cdkDrag>
+        <div class="element">
+            <p>I have long scrollable content with a handle</p>
+                <p *ngFor="let i of arr">x</p>
+      
+        </div>
+        <div class="example-handle" cdkDragHandle>
+          Drag Here
+        </div>
+      </div>
+      <div class="example-box" cdkDrag style="margin-left: 50px;">
+        <div cdkDragHandle>Dragging here works</div>
+      
+        <div class="example-handle"  >
+          Can't Drag Here
+        </div>
+      </div>
+      
+</div>
